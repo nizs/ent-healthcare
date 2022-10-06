@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
+import './Header.css';
 
 
 const Menubar = () => {
@@ -26,11 +27,11 @@ const Menubar = () => {
                         <Navbar.Text className='fw-bold'>
                             Signed in as: <a href="#login">Mark Otto</a>
                         </Navbar.Text>
-                        <Link to='/login'>
+                        <Link className='btn-nav mb-1' to='/login'>
                             <Button className='ms-3 btn-register' variant="success">Login</Button>
                         </Link>
-                        <Link to='/register'>
-                            <Button className='ms-3 btn-register' variant="warning">Register</Button>
+                        <Link className='btn-nav' to='/register'>
+                            <Button className='btn-register ms-3' variant="warning">Register</Button>
                         </Link>
                     </div>
                 </Navbar.Collapse>
