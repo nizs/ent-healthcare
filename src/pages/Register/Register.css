@@ -9,6 +9,10 @@
 }
 .form-submit{
     width: 25%;
+    margin-left: 12px;
+}
+.form-submit-login {
+    width: 25%;
 }
 Form {
     padding: 50px;
@@ -29,6 +33,10 @@ Form {
     }
     .form-submit{
         width: 100%;
+        margin-left: 0px !important;
+    }
+    .form-submit-login {
+        width: 100%;
     }
     Form {
         padding: 20px;
@@ -42,6 +50,10 @@ Form {
         width: 100%
     }
     .form-submit{
+        width: 100%;
+        margin-left: 0px !important;
+    }
+    .form-submit-login {
         width: 100%;
     }
     Form {
@@ -60,6 +72,10 @@ Form {
     }
     .form-submit{
         width: 100%;
+        margin-left: 0px !important;
+    }
+    .form-submit-login {
+        width: 100%;
     }
     Form {
         padding: 20px;
@@ -76,6 +92,10 @@ Form {
         width: 100%
     }
     .form-submit{
+        width: 100%;
+        margin-left: 0px !important;
+    }
+    .form-submit-login {
         width: 100%;
     }
     Form {

@@ -18,7 +18,7 @@ const Login = () => {
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Control className='p-3' type="password" placeholder="PASSWORD" />
                     </Form.Group>
-                    <Button className='form-submit mt-2' variant="primary" type='submit'>LOGIN</Button>
+                    <Button className='form-submit-login mt-2' variant="primary" type='submit'>LOGIN</Button>
                 </Form>
                 <div className='mx-auto alt-signin'>
                     <div className='d-flex align-items-center py-5'>
