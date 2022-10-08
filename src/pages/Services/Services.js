@@ -1,10 +1,11 @@
 import React from 'react';
+import Treatments from './Treatments/Treatments';
 
 const Services = () => {
     return (
-        <div>
-            <h2>our service page</h2>
-        </div>
+        <>
+            <Treatments></Treatments>
+        </>
     );
 };
 

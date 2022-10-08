@@ -1,0 +1,25 @@
+.card {
+    display: flex;
+    flex-direction: row;
+}
+.card-title {
+    color: #252628;
+    font-size: 24px;
+}
+.title {
+    color: #343434;
+}
+.card-description {
+    color: #717479;
+}
+
+/* treatment responsive */
+@media only screen and (max-width: 425px){
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+    .card img {
+        width: 100%;
+    }
+}

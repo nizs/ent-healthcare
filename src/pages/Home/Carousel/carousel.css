@@ -1,0 +1,19 @@
+.carousel {
+    position: initial;
+    width: 100%;
+    overflow: inherit !important;
+}
+.testimonial {
+    background-color: #2664c8;
+}
+.testimonial-origin {
+    color: yellow;
+}
+.testimonial-feedback {
+    color: rgb(211, 210, 210);
+    font-size: 18px;
+    font-style: italic;
+}
+.testimonial-icon {
+    font-size: 66px;
+}
