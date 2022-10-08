@@ -12,7 +12,7 @@ const Menubar = () => {
         <Navbar className='my-2' bg="light" expand="lg">
             <Container fluid>
                 <Navbar.Toggle aria-controls="navbarScroll" />
-                <Navbar.Collapse id="navbarScroll">
+                <Navbar.Collapse className='justify-content-end' id="navbarScroll">
                     <Nav
                         className="me-auto my-2 my-lg-0"
                         style={{ maxHeight: '100px', fontWeight: '600', color: '#4a4c4f' }}

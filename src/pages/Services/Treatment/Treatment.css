@@ -12,6 +12,16 @@
 .card-description {
     color: #717479;
 }
+.blog-font-sm {
+    font-size: 15px;
+    font-weight: 600;
+}
+.blog-font-time {
+    color: green;
+}
+.blog-font-comment {
+    color: blue;
+}
 
 /* treatment responsive */
 @media only screen and (max-width: 425px){

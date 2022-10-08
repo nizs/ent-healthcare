@@ -2,31 +2,37 @@
     {
         "serviceTitle": "General Adults for Ear Nose & Throat",
         "serviceDescription": "Our doctors diagnose and treat ear, nose, throat (ENT) and head and neck conditions, some of which may require further specialized care. If our doctors find that your condition requires more advanced care, your general ENT doctor will work closely with our team of specialists.",
-        "serviceImg": "https://i.ibb.co/d5wnSX8/treatment-img-1.jpg"
+        "serviceImg": "https://i.ibb.co/d5wnSX8/treatment-img-1.jpg",
+        "id": "1"
     },
     {
         "serviceTitle": "Children’s Ear Nose & Throat",
         "serviceDescription": "To provide your child with the most comprehensive care, the department collaborates with other services at Ent Healthcare, such as audiology, speech pathology and learning services, pulmonary medicine, allergy, immunology pediatric medicine and surgery.",
-        "serviceImg": "https://i.ibb.co/2jfmj4s/treatment-img-2.jpg"
+        "serviceImg": "https://i.ibb.co/2jfmj4s/treatment-img-2.jpg",
+        "id": "2"
     },
     {
         "serviceTitle": "Hearing Aid Repair",
         "serviceDescription": "Hearing aids are tiny marvels of technology. Despite their small size, they contain a lot of sophisticated parts and perform many advanced functions every second. If you suspect your hearing aids need to be repaired, try our service .",
-        "serviceImg": "https://i.ibb.co/VwxRzqy/treatment-img-3.jpg"
+        "serviceImg": "https://i.ibb.co/VwxRzqy/treatment-img-3.jpg",
+        "id": "3"
     },
     {
         "serviceTitle": "Nose and Sinus",
         "serviceDescription": "Our team will determine if you have a sinus infection by asking about symptoms and examining you.Antibiotics are not needed for many sinus infections. Most sinus infections usually get better on their own without antibiotics.",
-        "serviceImg": "https://i.ibb.co/nrgg0bN/treatment-img-4.jpg"
+        "serviceImg": "https://i.ibb.co/nrgg0bN/treatment-img-4.jpg",
+        "id": "4"
     },
     {
         "serviceTitle": "Allergy Problems",
         "serviceDescription": "You can find treatment options for mild to moderate allergic reactions. Antihistamines and decongestants can help treat certain symptoms, as can nasal sprays.If you have an allergic-type asthma, your doctor might also prescribe an inhaler to ease attacks. Or we may inject a special antibody to manage your symptoms.",
-        "serviceImg": "https://i.ibb.co/ZLwmSFj/treatment-img-5.jpg"
+        "serviceImg": "https://i.ibb.co/ZLwmSFj/treatment-img-5.jpg",
+        "id": "5"
     },
     {
         "serviceTitle": "Voice and Airway",
         "serviceDescription": "Our multi-disciplinary approach enables us to offer a tailored treatment strategy for each patient. We recognize the importance of voice and swallowing on a patient’s quality of life.",
-        "serviceImg": "https://i.ibb.co/HHR2CgH/treatment-img-6.jpg"
+        "serviceImg": "https://i.ibb.co/HHR2CgH/treatment-img-6.jpg",
+        "id": "6"
     }
 ]

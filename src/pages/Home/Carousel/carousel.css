@@ -1,5 +1,5 @@
 .carousel {
-    position: initial;
+    position: sticky;
     width: 100%;
     overflow: inherit !important;
 }

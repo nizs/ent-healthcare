@@ -21,7 +21,7 @@ const Treatments = () => {
                     <p className='card-description'>Our aim is to provide specialist care by drawing from the 10 plus years of experience.</p>
                 </div>
                 {
-                    treatments.map(treatment => <Treatment treatment={treatment}></Treatment>)
+                    treatments.map(treatment => <Treatment treatment={treatment} key={treatment.id}></Treatment>)
                 }
             </Row>
         </Container>

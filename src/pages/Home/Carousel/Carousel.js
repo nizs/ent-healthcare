@@ -11,7 +11,7 @@ function Testimonial() {
             </div>
             <Carousel>
                 <Carousel.Item>
-                    <Carousel.Caption className='carousel p-5' >
+                    <Carousel.Caption className='carousel p-5 ' >
                         <h3>Rebel Deo</h3>
                         <p className='testimonial-origin'>"Patients from Greece"</p>
                         <p className='testimonial-feedback'>“After taking your advice with regard to what I thought was Post Nasal Drip I started to take Gaviscon Advanced and within about four to five days of taking this before going to bed the problem cleared up.”</p>
