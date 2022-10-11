@@ -3,11 +3,19 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { signOut } from 'firebase/auth';
 import { Link } from 'react-router-dom';
+import auth from '../../firebase.init';
 import './Header.css';
 
 
 const Menubar = () => {
+    const [user, loading, error] = useAuthState(auth);
+
+    const handleSignout = () => {
+        signOut(auth);
+    }
     return (
         <Navbar className='my-2' bg="light" expand="lg">
             <Container fluid>
@@ -24,15 +32,29 @@ const Menubar = () => {
                         <Nav.Link as={Link} to="/about">About Us</Nav.Link>
                     </Nav>
                     <div className='register-responsive'>
-                        <Navbar.Text className='fw-bold'>
-                            Signed in as: <a href="#login">Mark Otto</a>
-                        </Navbar.Text>
-                        <Link className='btn-nav mb-1' to='/login'>
-                            <Button className='ms-3 btn-register' variant="success">Login</Button>
-                        </Link>
-                        <Link className='btn-nav' to='/register'>
-                            <Button className='btn-register ms-3' variant="warning">Register</Button>
-                        </Link>
+                        {!user ?
+                            <>
+                                <Navbar.Text className='fw-bold'>
+                                    Signed in as: <a className='text-success' href="#login">Guest</a>
+                                </Navbar.Text>
+                                <Link className='btn-nav mb-1' to='/login'>
+                                    <Button className='ms-3 btn-register fw-bold' variant="success">Login</Button>
+                                </Link>
+                                <Link className='btn-nav' to='/register'>
+                                    <Button className='btn-register ms-3 fw-bold' variant="warning">Register</Button>
+                                </Link>
+                            </>
+                            :
+                            <>
+                                <Navbar.Text className='fw-bold'>
+                                    Signed in as: <a className='text-success' href="#login">{user.displayName}</a>
+                                </Navbar.Text>
+                                <Link className='btn-nav'>
+                                    <Button onClick={handleSignout} className='btn-register ms-3 fw-bold' variant="danger">Signout</Button>
+                                </Link>
+                            </>
+
+                        }
                     </div>
                 </Navbar.Collapse>
             </Container>

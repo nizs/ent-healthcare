@@ -1,9 +1,15 @@
 import { Col, Row } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
+import { useNavigate } from 'react-router-dom';
 import './Treatment.css';
 
 function Treatment({ treatment }) {
-    const { serviceTitle, serviceDescription, serviceImg } = treatment;
+    const { serviceTitle, serviceDescription, serviceImg, id } = treatment;
+    const navigate = useNavigate();
+    
+    const handleTreatmentDetails = id => {
+        navigate(`/servicedetails/${id}`);
+    }
     return (
         <>
             <Col sm={12} md={12} lg={6}>
@@ -16,7 +22,7 @@ function Treatment({ treatment }) {
                         <div className='card-description my-4'>
                             {serviceDescription}
                         </div>
-                        <Button variant="primary">CHECK INFO</Button>
+                        <Button onClick={ () => handleTreatmentDetails(id)} variant="primary">CHECK INFO</Button>
                     </div>
                 </div>
             </Col>
