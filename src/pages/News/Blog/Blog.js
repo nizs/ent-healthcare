@@ -2,10 +2,15 @@ import React from 'react';
 import { Col } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { useNavigate } from 'react-router-dom';
 import '../../Services/Treatment/Treatment.css';
 
 const Blog = ({ blog }) => {
-    const { blogTitle, blogDescription, blogTime, bLogImg, blogComment } = blog;
+    const { blogTitle, blogListingTitle, blogDescription, blogTime, bLogImg, blogComment, id } = blog;
+    const navigate = useNavigate()
+    const handleBlogDetails = id => {
+        navigate(`/blogs/blogdetails/${id}`);
+    }
     return (
         <>
             <Col sm={12} md={6} lg={4}>
@@ -16,11 +21,11 @@ const Blog = ({ blog }) => {
                             <span className='blog-font-time'>{blogTime}</span>
                             <span className='card-description ms-5'>Comments <span className='blog-font-comment'>{blogComment}</span></span>
                         </div>
-                        <Card.Title className='my-4 title'>{blogTitle}</Card.Title>
+                        <Card.Title className='my-4 title'>{blogListingTitle}</Card.Title>
                         <Card.Text className='card-description mb-4'>
                             {blogDescription}
                         </Card.Text>
-                        <Button className='rounded-0 fw-bold' variant="success">Read More</Button>
+                        <Button onClick={ () => handleBlogDetails(id)} className='rounded-0 fw-bold' variant="success">Read More</Button>
                     </Card.Body>
                 </Card>
             </Col>

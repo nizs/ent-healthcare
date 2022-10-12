@@ -1,0 +1,38 @@
+[
+    {
+        "doctorName": "Dr. Simons Elwin",
+        "docDesignation": "MBBS. BSC(MED)(HONS), MS",
+        "docImg": "https://i.ibb.co/QNTHxXg/team-1.jpg",
+        "key": "1"
+    },
+    {
+        "doctorName": "Dr. Cameron Lewers",
+        "docDesignation": "MBBS. BSC(MED)(HONS), MS",
+        "docImg": "https://i.ibb.co/vwScRxq/team-2.jpg",
+        "key": "2"
+    },
+    {
+        "doctorName": "Dr. Alana Hopley",
+        "docDesignation": "MBBS. BSC(MED)(HONS), MS",
+        "docImg": "https://i.ibb.co/sVCcG9b/team-3.jpg",
+        "key": "3"
+    },
+    {
+        "doctorName": "Dr. Roger Distefano",
+        "docDesignation": "MBBS. BSC(MED)(HONS), MS",
+        "docImg": "https://i.ibb.co/3F9tNvL/team-4.jpg",
+        "key": "4"
+    },
+    {
+        "doctorName": "Dr. Alica Lavater",
+        "docDesignation": "MBBS. BSC(MED)(HONS), MS",
+        "docImg": "https://i.ibb.co/CtJLR6x/team-5.jpg",
+        "key": "5"
+    },
+    {
+        "doctorName": "Dr. Ashley Hanigan",
+        "docDesignation": "MBBS. BSC(MED)(HONS), MS",
+        "docImg": "https://i.ibb.co/1sGJsh0/team-6.jpg",
+        "key": "6"
+    }
+]

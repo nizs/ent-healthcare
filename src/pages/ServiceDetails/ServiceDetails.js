@@ -32,7 +32,7 @@ const ServiceDetails = () => {
                             <div className='m-4'>
                                 <div>
                                     <h3 className='fw-bold title'>{serviceTitle}</h3>
-                                    <h4 className='my-3'>Medical & Healthcare Templates for Ear Nose & Throat doctor. General otolaryngologists treat illnesses involving the ears, nose, throat, sinuses and head and neck. it surgical care for otolaryngological related conditions.</h4>
+                                    <h4 className='my-3'>Medical & Healthcare for Ear Nose & Throat doctor. General otolaryngologists treat illnesses involving the ears, nose, throat, sinuses and head and neck. it surgical care for otolaryngological related conditions.</h4>
                                     <p className='card-description'>{serviceDescription}</p>
                                 </div>
                                 <Row className='my-5'>
@@ -79,6 +79,7 @@ const ServiceDetails = () => {
                                         </div>
                                     </Col>
                                 </Row>
+                                <Button className='rounded-0 fw-bold my-3' variant="success">HAVE SERVICE</Button>
                             </div>
                         </div>
                     </Col>

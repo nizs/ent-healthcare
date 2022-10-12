@@ -1,26 +1,35 @@
 [
     {
+        "blogListingTitle":"10 Tips for People Who Sleep with a Snorer",
         "blogTitle": "Difference between authorization and authentication",
         "blogDescription": "Nam rutrum est at dui egestas hendrerit. Duis pellentesque risus efficitur, hendrerit purus id, volutpat nisl. Cras ac mauris vel eros volutpat euismod et vitae velit. Curabitur aliquam, dolor ac tempor hendrerit, odio enim rutrum odioue arcu quis neque. Nunc nibh erat, rhoncus blandit maximus ut, volutpat volutpat leo.",
+        "blogDetailsDescription": "Despite the similar-sounding terms, authentication and authorization are separate steps in the login process. Understanding the difference between the two is key to successfully implementing an IAM solution.Let's use an analogy to outline the differences.Consider a person walking up to a locked door to provide care to a pet while the family is away on vacation.Authentication, in the form of a key. The lock on the door only grants access to someone with the correct key in much the same way that a system only grants access to users who have the correct credentials.Authorization, in the form of permissions. Once inside, the person has the authorization to access the kitchen and open the cupboard that holds the pet food. The person may not have permission to go into the bedroom for a quick nap. Authentication and authorization work together in this example. A pet sitter has the right to enter the house (authentication), and once there, they have access to certain areas (authorization). ",
         "blogTime": "08 OCT 2022",
         "blogComment": "25",
         "bLogImg":"https://i.ibb.co/s9Q1FGt/post-img-1.jpg",
+        "blogDetailsImg":"https://i.ibb.co/QCQK5Qw/postdetails-img-1.jpg",
         "id": "1"
     },
     {
+        "blogListingTitle":"Tonsils and Tonsillectomy Patient Information",
         "blogTitle": "Why are you using firebase? What other options do you have to implement authentication",
         "blogDescription": "Nam rutrum est at dui egestas hendrerit. Duis pellentesque risus efficitur, hendrerit purus id, volutpat nisl. Cras ac mauris vel eros volutpat euismod et vitae velit. Curabitur aliquam, dolor ac tempor hendrerit, odio enim rutrum odioue arcu quis neque. Nunc nibh erat, rhoncus blandit maximus ut, volutpat volutpat leo.",
+        "blogDetailsDescription": "Firebase Authentication provides backend services, easy-to-use SDKs, and ready-made UI libraries to authenticate users to your app. It supports authentication using passwords, phone numbers, popular federated identity providers like Google, Facebook and Twitter, and more.User authentication is a powerful way to provide rightful access to your digital properties like your website or application. And it obviously adds to the security and a customized user experience.There are otherUser Authentication Platform which are actually Firebase Alternatives and these are  STYTCH, ory, supabase, okta, pingledentity, keycloak ,frontegg , Authress etc.",
         "blogTime": "09 OCT 2022",
         "blogComment": "18",
         "bLogImg": "https://i.ibb.co/G74jcdF/post-img-2.jpg",
+        "blogDetailsImg":"https://i.ibb.co/dMG8KKv/postdetails-img-2.jpg",
         "id": "2"
     },
     {
+        "blogListingTitle":"How Snoring Can Be a Sign of a More Serious Condition",
         "blogTitle": "What other services does firebase provide other than authentication",
         "blogDescription": "Nam rutrum est at dui egestas hendrerit. Duis pellentesque risus efficitur, hendrerit purus id, volutpat nisl. Cras ac mauris vel eros volutpat euismod et vitae velit. Curabitur aliquam, dolor ac tempor hendrerit, odio enim rutrum odioue arcu quis neque. Nunc nibh erat, rhoncus blandit maximus ut, volutpat volutpat leo.",
+        "blogDetailsDescription": "Firebase is originally developed by Firebase inc and later acquired by Google. It provides different kinds of services that help you to develop high-quality mobile and web applications to grow your business. It is compatible with Web, iOS, Android, and OS X clients. With Firebase, developers don’t need to worry about the backend programming, Authentication, API development, database (real-time cloud-hosted NoSQL database and cloud firestore), File storage, etc. Firebase provides all the services with very efficient and fast performance.Firebase is a full package that can help in developing your mobile or web applications faster with fewer resources and more efficiency. Now, let’s look at some of the services and use of it.There are many services which Firebase provides, Most useful of them are Cloud Firestore , Cloud Functions , Authentication , Hosting  , Cloud Storage , Google Analytics , Predictions , Cloud Messaging , Dynamic Links , Remote Config etc",
         "blogTime": "10 OCT 2022",
         "blogComment": "30",
         "bLogImg": "https://i.ibb.co/wcLpPCX/post-img-3.jpg",
+        "blogDetailsImg":"https://i.ibb.co/wzd7LP0/postdetails-img-3.jpg",
         "id": "3"
     }
 ]

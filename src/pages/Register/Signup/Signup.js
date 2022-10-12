@@ -1,11 +1,11 @@
 import React from 'react';
 import { useState } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useUpdateProfile } from 'react-firebase-hooks/auth';
 import '../Register.css';
 import auth from '../../../firebase.init';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Signup = () => {
     const [displayName, setDisplayName] = useState('');
@@ -17,6 +17,8 @@ const Signup = () => {
     const [customerror, setcustomError] = useState('');
     const [updateProfile] = useUpdateProfile(auth);
     const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/';
 
     const handleNameBlur = e => {
         setDisplayName(e.target.value);
@@ -42,6 +44,8 @@ const Signup = () => {
         loading,
         error
     ] = useCreateUserWithEmailAndPassword(auth);
+    const [signInWithGoogle, user1] = useSignInWithGoogle(auth);
+    const [signInWithGithub, user2] = useSignInWithGithub(auth);
 
     const handleFormSubmit = async (e) => {
         e.preventDefault();
@@ -53,7 +57,19 @@ const Signup = () => {
         await updateProfile({ displayName })
     }
     if (user) {
-        navigate('/home');
+        navigate(from, { replace: true });
+    }
+    const handleGoogleSignin = () => {
+        signInWithGoogle();
+    }
+    if(user1){
+        navigate(from, { replace: true });
+    }
+    const handleGitgubSignin = () => {
+        signInWithGithub();
+    }
+    if(user2){
+        navigate(from, { replace: true });
     }
 
     return (
@@ -107,8 +123,8 @@ const Signup = () => {
                         <div className='border border-1 border-primary w-50'></div>
                     </div>
                     <div className='d-flex flex-column pb-3 align-items-center'>
-                        <Button className='mt-2 fw-bold alt-signin-register' variant="primary" type='submit'>SIGIN WITH GOOGLE</Button>
-                        <Button className='mt-2 fw-bold alt-signin-register' variant="dark" type='submit'>SIGIN WITH GITHUB</Button>
+                        <Button onClick={handleGoogleSignin} className='mt-2 fw-bold alt-signin-register' variant="primary" type='submit'>SIGNIN WITH GOOGLE</Button>
+                        <Button onClick={handleGitgubSignin} className='mt-2 fw-bold alt-signin-register' variant="dark" type='submit'>SIGNIN WITH GITHUB</Button>
                     </div>
                 </div>
             </Container>

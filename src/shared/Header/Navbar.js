@@ -29,6 +29,7 @@ const Menubar = () => {
                         <Nav.Link as={Link} className='me-4' to="/home">Home</Nav.Link>
                         <Nav.Link as={Link} className='me-4' to="/services">Services</Nav.Link>
                         <Nav.Link as={Link} className='me-4' to="/blogs">Blog</Nav.Link>
+                        <Nav.Link as={Link} className='me-4' to="/team">Team</Nav.Link>
                         <Nav.Link as={Link} to="/about">About Us</Nav.Link>
                     </Nav>
                     <div className='register-responsive'>

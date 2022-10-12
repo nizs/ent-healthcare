@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from 'react-router-dom';
+import { useSignInWithEmailAndPassword, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import '../Register.css';
 
@@ -9,6 +9,8 @@ const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/';
 
     const handleEmailBlur = e => {
         setEmail(e.target.value);
@@ -22,6 +24,8 @@ const Login = () => {
         loading,
         error
     ] = useSignInWithEmailAndPassword(auth);
+    const [signInWithGoogle, user1] = useSignInWithGoogle(auth);
+    const [signInWithGithub, user2] = useSignInWithGithub(auth);
 
 
     const handleLoginsubmit = e => {
@@ -29,7 +33,19 @@ const Login = () => {
         signInWithEmailAndPassword(email, password);
     }
     if (user) {
-        navigate('/home');
+        navigate(from, { replace: true });
+    }
+    const handleGoogleSignin = () => {
+        signInWithGoogle();
+    }
+    if(user1){
+        navigate(from, { replace: true });
+    }
+    const handleGitgubSignin = () => {
+        signInWithGithub();
+    }
+    if(user2){
+        navigate(from, { replace: true });
     }
     return (
         <div className='form-page-back py-5'>
@@ -59,8 +75,8 @@ const Login = () => {
                         <div className='border border-1 border-primary w-100'></div>
                     </div>
                     <div className='d-flex flex-column pb-3'>
-                        <Button className='mt-2 fw-bold' variant="primary" type='submit'>SIGIN WITH GOOGLE</Button>
-                        <Button className='mt-2 fw-bold' variant="dark" type='submit'>SIGIN WITH GITHUB</Button>
+                        <Button onClick={handleGoogleSignin} className='mt-2 fw-bold' variant="primary" type='submit'>SIGNIN WITH GOOGLE</Button>
+                        <Button onClick={handleGitgubSignin} className='mt-2 fw-bold' variant="dark" type='submit'>SIGNIN WITH GITHUB</Button>
                     </div>
                 </div>
             </Container>
