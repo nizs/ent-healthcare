@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import { useCreateUserWithEmailAndPassword, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSendEmailVerification, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useUpdateProfile } from 'react-firebase-hooks/auth';
 import '../Register.css';
 import auth from '../../../firebase.init';
@@ -44,6 +44,7 @@ const Signup = () => {
         loading,
         error
     ] = useCreateUserWithEmailAndPassword(auth , {sendEmailVerification : true});
+    const [sendEmailVerification] = useSendEmailVerification(auth);
     const [signInWithGoogle, user1] = useSignInWithGoogle(auth);
     const [signInWithGithub, user2] = useSignInWithGithub(auth);
 
@@ -54,6 +55,7 @@ const Signup = () => {
             return;
         }
         await createUserWithEmailAndPassword(email, password);
+        await sendEmailVerification();
         await updateProfile({ displayName })
     }
     if (user) {

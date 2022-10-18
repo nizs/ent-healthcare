@@ -18,7 +18,7 @@ const Header = () => {
                     <Col className='d-flex align-items-center' sm={12} md={8} lg={6}>
                         <div className='ms-auto appointment-res'>
                             <div>
-                                <Button className='fw-bold' variant="success">MAKE AN APPOINTMENT</Button>
+                                <Button className='fw-bold rounded-0 px-3 py-2' variant="success">MAKE AN APPOINTMENT</Button>
                             </div>
                             <div className='ms-4 text-end text-white contact-text'>
                                 <h4 className='mb-0'>1800-123-4567</h4>
