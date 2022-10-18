@@ -43,7 +43,7 @@ const Signup = () => {
         user,
         loading,
         error
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth , {sendEmailVerification : true});
     const [signInWithGoogle, user1] = useSignInWithGoogle(auth);
     const [signInWithGithub, user2] = useSignInWithGithub(auth);
 
@@ -85,7 +85,7 @@ const Signup = () => {
                         <Col sm={12} md={6} lg={6}>
                             <div>
                                 <Form.Group className="mb-3" controlId="formFirstName">
-                                    <Form.Control onBlur={handleNameBlur} className='p-3' type="text" placeholder="NAME" />
+                                    <Form.Control onBlur={handleNameBlur} className='p-3' type="text" placeholder="FIRST NAME" />
                                 </Form.Group>
                                 <Form.Group className="mb-3" controlId="formPhone">
                                     <Form.Control onBlur={handlePhoneBlur} className='p-3' type="text" placeholder="PHONE" />

@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import "../Services/Treatment/Treatment.css";
 
 const ServiceDetails = () => {
@@ -10,6 +10,7 @@ const ServiceDetails = () => {
     const [servicedt , setServicedt] = useState([]);
     const [singleservicedt , setSingleservicedt] = useState({});
     const {serviceTitle, serviceDescription, serviceImg, serviceSingleimg, singleServiceDescription} = singleservicedt;
+    const navigate = useNavigate();
 
     useEffect(() => {
         fetch('/ent_db.json')
@@ -22,6 +23,10 @@ const ServiceDetails = () => {
             setSingleservicedt(matcheddt);
         }
     }, [servicedt])
+
+    const handleServiceCheckout = ()=> {
+        navigate('/checkout');
+    }
     return (
         <>
             <Container>
@@ -79,7 +84,7 @@ const ServiceDetails = () => {
                                         </div>
                                     </Col>
                                 </Row>
-                                <Button className='rounded-0 fw-bold my-3' variant="success">HAVE SERVICE</Button>
+                                <Button onClick={handleServiceCheckout} className='rounded-0 fw-bold my-3' variant="success">HAVE SERVICE</Button>
                             </div>
                         </div>
                     </Col>

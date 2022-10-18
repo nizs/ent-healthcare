@@ -13,6 +13,8 @@ import RequireAuth from './components/RequireAuth/RequireAuth';
 import BlogDetails from './pages/News/BlogDetails/BlogDetails';
 import Team from './pages/Team/Team';
 import Error from './pages/Error/Error';
+import Checkout from './pages/Checkout/Checkout';
+import Orders from './pages/Orders/Orders';
 
 function App() {
   return (
@@ -29,6 +31,14 @@ function App() {
             </RequireAuth>
           }
         />
+        <Route path='/checkout' element=
+          {
+            <RequireAuth>
+              <Checkout></Checkout>
+            </RequireAuth>
+          }
+        />
+        <Route path='/orders' element={<Orders></Orders>} />
         <Route path='/blogs' element={<News></News>} />
         <Route path='blogs/blogdetails/:blogid' element={<BlogDetails></BlogDetails>} />
         <Route path='/team' element=
