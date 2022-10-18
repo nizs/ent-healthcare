@@ -15,6 +15,7 @@ import Team from './pages/Team/Team';
 import Error from './pages/Error/Error';
 import Checkout from './pages/Checkout/Checkout';
 import Orders from './pages/Orders/Orders';
+import Appointment from './pages/Appointment/Appointment';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path='/' element={<Home></Home>} />
         <Route path='/home' element={<Home></Home>} />
         <Route path='/services' element={<Services></Services>} />
+        <Route path='/appointment' element={<Appointment></Appointment>} />
         <Route path='/servicedetails/:serviceid' element=
           {
             <RequireAuth>

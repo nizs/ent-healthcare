@@ -3,9 +3,13 @@ import { Button, Col, Container, Row } from 'react-bootstrap';
 import Logo from '../../images/logo.png';
 import Navbar from './Navbar';
 import './Header.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Header = () => {
+    const navigate = useNavigate()
+    const handleAppointment = () => {
+        navigate('/appointment');
+    }
     return (
         <div className='bg-primary py-2'>
             <Container>
@@ -18,7 +22,7 @@ const Header = () => {
                     <Col className='d-flex align-items-center' sm={12} md={8} lg={6}>
                         <div className='ms-auto appointment-res'>
                             <div>
-                                <Button className='fw-bold rounded-0 px-3 py-2' variant="success">MAKE AN APPOINTMENT</Button>
+                                <Button onClick={handleAppointment} className='fw-bold rounded-0 px-3 py-2' variant="success">MAKE AN APPOINTMENT</Button>
                             </div>
                             <div className='ms-4 text-end text-white contact-text'>
                                 <h4 className='mb-0'>1800-123-4567</h4>

@@ -33,6 +33,14 @@
 
 }
 
+/* appointment page css */
+.immergency-font{
+    font-size: 13px;
+}
+.scedual {
+    padding: 2rem;
+}
+
 /* treatment responsive */
 @media only screen and (max-width: 768px){
     .dev-bio {

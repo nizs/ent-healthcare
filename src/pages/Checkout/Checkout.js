@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import '../Services/Treatment/Treatment.css';
 
 const Checkout = () => {
 
@@ -17,8 +18,8 @@ const Checkout = () => {
             <div className='py-5 mb-4'>
                 <Container>
                     <div className='py-4'>
-                        <h2>Checkout</h2>
-                        <p>By filling this form Checkout your Service to our order section</p>
+                        <h2 className='title'>Checkout</h2>
+                        <p className='card-description'>By filling this form Checkout your Service to our order section</p>
                     </div>
                     {/* checkout-form */}
                     <Form onSubmit={handleFormSubmit} className='form-back border'>
