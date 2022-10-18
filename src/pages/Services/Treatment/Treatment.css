@@ -34,6 +34,11 @@
 }
 
 /* treatment responsive */
+@media only screen and (max-width: 768px){
+    .dev-bio {
+        text-align: center;
+    }
+}
 @media only screen and (max-width: 425px){
     .card {
         display: flex;
@@ -41,5 +46,8 @@
     }
     .card img {
         width: 100%;
+    }
+    .dev-bio {
+        text-align: center;
     }
 }

@@ -12,6 +12,7 @@ import ServiceDetails from './pages/ServiceDetails/ServiceDetails';
 import RequireAuth from './components/RequireAuth/RequireAuth';
 import BlogDetails from './pages/News/BlogDetails/BlogDetails';
 import Team from './pages/Team/Team';
+import Error from './pages/Error/Error';
 
 function App() {
   return (
@@ -30,10 +31,23 @@ function App() {
         />
         <Route path='/blogs' element={<News></News>} />
         <Route path='blogs/blogdetails/:blogid' element={<BlogDetails></BlogDetails>} />
-        <Route path='/team' element={<Team></Team>} />
-        <Route path='/about' element={<Aboutus></Aboutus>} />
+        <Route path='/team' element=
+          {
+            <RequireAuth>
+              <Team></Team>
+            </RequireAuth>
+          }
+        />
+        <Route path='/about' element=
+          {
+            <RequireAuth>
+              <Aboutus></Aboutus>
+            </RequireAuth>
+          }
+        />
         <Route path='/login' element={<Login></Login>} />
         <Route path='/register' element={<Signup></Signup>} />
+        <Route path='*' element={<Error></Error>} />
       </Routes>
       <Footer></Footer>
     </div>

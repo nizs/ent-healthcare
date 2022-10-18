@@ -4,6 +4,7 @@
         "serviceDescription": "Our doctors diagnose and treat ear, nose, throat (ENT) and head and neck conditions, some of which may require further specialized care. If our doctors find that your condition requires more advanced care, your general ENT doctor will work closely with our team of specialists.",
         "serviceImg": "https://i.ibb.co/d5wnSX8/treatment-img-1.jpg",
         "serviceSingleimg": "https://i.ibb.co/ZfG3sfq/service-single.jpg",
+        "singleServiceDescription": "ENT Healthcare has a team of board certified otolaryngologists (ENT’s), Nurse Practitioners and Physician Assistants who specialize in the medical and surgical care of ear, nose, face, neck and throat disorders.  Our highly trained and subspecialized group often  works alongside other subspecialties such as endocrinology, audiology, oncology, allergy and immunology and neurology to provide personalized quality treatments to each individual’s condition.",
         "id": "1"
     },
     {
@@ -11,6 +12,7 @@
         "serviceDescription": "To provide your child with the most comprehensive care, the department collaborates with other services at Ent Healthcare, such as audiology, speech pathology and learning services, pulmonary medicine, allergy, immunology pediatric medicine and surgery.",
         "serviceImg": "https://i.ibb.co/2jfmj4s/treatment-img-2.jpg",
         "serviceSingleimg": "https://i.ibb.co/R41XGHT/service-details2.jpg",
+        "singleServiceDescription": "At ENT Healthcare, we provide the full range of ENT services. Our team of experts is with you from your child’s initial evaluation through treatment and follow-up care. We take time to explain procedures to you in detail and answer any questions you may have..",
         "id": "2"
     },
     {
@@ -18,6 +20,7 @@
         "serviceDescription": "Hearing aids are tiny marvels of technology. Despite their small size, they contain a lot of sophisticated parts and perform many advanced functions every second. If you suspect your hearing aids need to be repaired, try our service .",
         "serviceImg": "https://i.ibb.co/VwxRzqy/treatment-img-3.jpg",
         "serviceSingleimg": "https://i.ibb.co/fGDSHzC/service-details3.jpg",
+        "singleServiceDescription": "Prolonged exposure to moisture is the leading cause of repair in hearing aids. Most people don’t realize how much moisture hearing aids can accumulate with daily use. At night, open the battery compartment and remove the batteries to allow aids to air out. If you live in a very humid area, are athletic or perspire heavily, it might be wise to invest in a hearing aid sleeve or sweatband.",
         "id": "3"
     },
     {
@@ -25,6 +28,7 @@
         "serviceDescription": "Our team will determine if you have a sinus infection by asking about symptoms and examining you.Antibiotics are not needed for many sinus infections. Most sinus infections usually get better on their own without antibiotics.",
         "serviceImg": "https://i.ibb.co/nrgg0bN/treatment-img-4.jpg",
         "serviceSingleimg": "https://i.ibb.co/n7NKnPY/service-details4.jpg",
+        "singleServiceDescription": "Chronic sinusitis and acute sinusitis have similar signs and symptoms. But acute sinusitis is a temporary infection of the sinuses often associated with a cold. The signs and symptoms of chronic sinusitis last at least 12 weeks, but you may have several episodes of acute sinusitis before developing chronic sinusitis. Fever isn't a common sign of chronic sinusitis, but you might have one with acute sinusitis.",
         "id": "4"
     },
     {
@@ -32,6 +36,7 @@
         "serviceDescription": "You can find treatment options for mild to moderate allergic reactions. Antihistamines and decongestants can help treat certain symptoms, as can nasal sprays.If you have an allergic-type asthma, your doctor might also prescribe an inhaler to ease attacks. Or we may inject a special antibody to manage your symptoms.",
         "serviceImg": "https://i.ibb.co/ZLwmSFj/treatment-img-5.jpg",
         "serviceSingleimg": "https://i.ibb.co/sH4czSG/service-details5.jpg",
+        "singleServiceDescription": "Your immune system produces substances known as antibodies. When you have allergies, your immune system makes antibodies that identify a particular allergen as harmful, even though it isn't. When you come into contact with the allergen, your immune system's reaction can inflame your skin, sinuses, airways or digestive system.",
         "id": "5"
     },
     {
@@ -39,6 +44,7 @@
         "serviceDescription": "Our multi-disciplinary approach enables us to offer a tailored treatment strategy for each patient. We recognize the importance of voice and swallowing on a patient’s quality of life.",
         "serviceImg": "https://i.ibb.co/HHR2CgH/treatment-img-6.jpg",
         "serviceSingleimg": "https://i.ibb.co/m6bn1Fy/service-details6.jpg",
+        "singleServiceDescription": "ENT Healthcare voice and airway experts provide expert diagnosis and treatment for conditions affecting a patient’s voice, airway and ability to swallow. Causes of voice and airway disorders include infections, upward movement of stomach acids into the throat, growths due to a virus, cancer and diseases that paralyze the vocal cords.",
         "id": "6"
     }
 ]

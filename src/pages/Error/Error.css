@@ -1,0 +1,12 @@
+.error-title {
+    font-size: 300px;
+}
+
+
+/* responsive error page */
+
+@media only screen and (max-width: 768px){
+    .error-title {
+        font-size: 150px;
+    }
+}
