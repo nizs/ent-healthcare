@@ -1,5 +1,6 @@
 # ENT Healthcare
 
+
 Live Website Link :  https://ent-healthcare.firebaseapp.com
 
 # FEATURES
@@ -24,7 +25,7 @@ Live Website Link :  https://ent-healthcare.firebaseapp.com
 
   
   # TECHNOLOGIES
-   * Html , Css , JavaScript
+   * Html(Jsx) , Css , JavaScript
    * Libraries ( Bootstrap , React Bootstrap , JavaScript React )
    * React Router
    * Firebase (Server side)
