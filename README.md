@@ -12,8 +12,9 @@ Live Website Link :  https://ent-healthcare.firebaseapp.com
  
  
  # FEATURES
-   * Responsiveness
-   * Relevent Content for Users
+   * Dynamic navbar with React Router
+   * we have services and user can click on the service button and it will take them
+     to detailes and from there user has there choice to take the service and order them.
    * Calls-to-Action (CTA)
    * Testimonials
    * Quality Images within small size
@@ -22,10 +23,9 @@ Live Website Link :  https://ent-healthcare.firebaseapp.com
  
  
  # FUNCTIONALITY
-    * Dynamic navbar with React Router
+    * 
     
-    * we have services and user can click on the service button and it will 
-      take them to detailes and from there user has there choice to take the service and order them
+    * 
     
     * We have a blog and according to the requirement blog details page has 
       it's own content which does not match with the home page blog individual blog content
