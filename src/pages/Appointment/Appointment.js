@@ -51,7 +51,7 @@ const Appointment = () => {
                                                 style={{ height: '100px' }}
                                             />
                                         </FloatingLabel>
-                                        <Button className='form-submit mt-3' variant="primary" type='submit'>CHECKOUT</Button>
+                                        <Button className='mt-3 fw-bold' variant="primary" type='submit'>GET APPOINTMENT</Button>
                                     </Row>
                                 </Form>
                             </Container>
