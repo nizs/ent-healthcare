@@ -11,6 +11,16 @@ Live Website Link :  https://ent-healthcare.firebaseapp.com
    * It is a SPA Application so no reload 
  
  
+ # FEATURES
+   * Responsiveness
+   * Relevent Content for Users
+   * Calls-to-Action (CTA)
+   * Testimonials
+   * Quality Images within small size
+   * It is a SPA Application so no reload 
+ 
+ 
+ 
  # FUNCTIONALITY
     * Dynamic navbar with React Router
     
