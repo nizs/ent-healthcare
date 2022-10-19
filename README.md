@@ -21,6 +21,7 @@ Live Website Link :  https://ent-healthcare.firebaseapp.com
    * We have google and github sign in system apart from the manual email and password along with other insertion process to the form.
    * We have integrated email validation and display name on the header after login and signup.
    * We have our private routes for blocking users who does not have accounts with us.
+   * Environment variable for Firebase has been added for the sake of the security reason.
 
 
   
