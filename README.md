@@ -12,8 +12,7 @@ Live Website Link :  https://ent-healthcare.firebaseapp.com
  
  
  # FUNCTIONALITY
-    * Website has dynamic navbar and with this navbar react 
-      router has been integrated, so our pages can be access from here.
+    * Dynamic navbar with React Router
     
     * we have services and user can click on the service button and it will 
       take them to detailes and from there user has there choice to take the service and order them
