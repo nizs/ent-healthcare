@@ -11,7 +11,8 @@ Live Website Link :  https://ent-healthcare.firebaseapp.com
    * It is a SPA Application so no reload 
  
  
- # functionality
+ 
+ # FUNCTIONALITY
    * We have a dynamic navbar from where user can access all the routes and explore whole website.
    * we have services and user can click on the service button and it will take them to detailes and from there user has there choice to take the service and order          them.
    * We have a blog and according to the requirement blog details page has it's own content which does not match with the home page blog individual blog content.
